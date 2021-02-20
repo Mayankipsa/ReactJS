@@ -10,11 +10,16 @@ const app = (props) => {
         { name: 'Shikha', age: 30 },
         { name: 'Vinod', age: 59 },
         { name: 'Lata', age: 58 }
-      ],
-      otherState: 'Some Other Info'
+      ]
     }
   );
 
+  const [otherState, setOtherState] = useState(
+    {
+      otherState: 'Some Other Info'
+    }
+  );
+  
   const switchNameHandler = () => {
     console.log('Button clicked!');
     // this.state.persons[0].name="Honey"; //cannot mutate state directly like this

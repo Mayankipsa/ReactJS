@@ -47,15 +47,6 @@ class App extends Component {
     })
   }
 
-  // stringChangedHandler = (event) => {
-  //   const str = event.target.value;
-  //   console.log(str.length);
-  //   this.setState({
-  //     str:str,
-  //     strLength: str.length
-  //   });
-  // }
-
   render() {
     const style = {
       backgroundColor: 'white',
@@ -86,17 +77,10 @@ class App extends Component {
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <p>This is really working!</p>
-        {/* <input type="text" onChange={(event) => this.stringChangedHandler(event)}></input> */}
-
-        {/* <p>String Length:{this.state.strLength}</p>
-        <p>String:{this.state.str}</p> */}
-
         <button
           style={style}
           onClick={() => this.togglePersonsHandler()}>Toggle Persons</button>
-
         {persons}
-
       </div>
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));

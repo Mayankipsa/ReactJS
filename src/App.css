@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+.UserInputOutput{
+  width: 60%;
+  margin: 5px auto;
+
+}

@@ -76,10 +76,13 @@ class App extends Component {
           age={this.state.persons[2].age}
 
         />
+        <div className="UserInputOutput">
+          {/* //=================User Inputs and Outputs */}
+          <UserInput changed={this.userNameChangeHandler}
+            userName={this.state.userName}></UserInput>
+          <UserOutput userName={this.state.userName}></UserOutput>
+        </div>
 
-        {/* //=================User Inputs and Outputs */}
-        <UserInput changed={this.userNameChangeHandler}></UserInput>
-        <UserOutput userName={this.state.userName}></UserOutput>
 
       </div>
     );

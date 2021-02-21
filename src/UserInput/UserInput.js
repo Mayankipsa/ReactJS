@@ -5,6 +5,7 @@ const userInput = (props) => {
     return (
         <div className="UserInput">
             User Input Text
+            <p>User Name: {props.userName}</p>
             <input type="text" onChange={props.changed}></input>
         </div>
     );

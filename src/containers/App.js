@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './Person/Person';
-import UserInput from "./UserInput/UserInput";
-import UserOutput from "./UserOutput/UserOutput";
+import Person from '../components/Persons/Person/Person';
+
 
 class App extends Component {
   state = {

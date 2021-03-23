@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Cockpit.css";
 
 const cockpit = (props) => {
-
+    useEffect(() => {
+        console.log('[Cockpit.js] useEffect.');
+        //fake http request
+        setTimeout(() => {
+            alert('persons changed, Save data to cloud');
+        }, 1000);
+    }
+    // , []
+    , [props.persons]
+    );
     // if (props.showPersons) {
     //     assignedClasses = 'red';
     // }

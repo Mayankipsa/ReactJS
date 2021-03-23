@@ -8,10 +8,22 @@ const cockpit = (props) => {
         setTimeout(() => {
             alert('persons changed, Save data to cloud');
         }, 1000);
-    }
+        
+        return ()=>{
+            console.log('[Cockpit.js] clean up work in useEffect');
+        };
+    }  
     // , []
     , [props.persons]
     );
+
+    useEffect(()=>{
+        console.log('[Cockpit.js] 2nd  useEffect.');
+
+        return ()=>{
+            console.log('[Cockpit.js] clean up work in useEffect');
+        };
+    });
     // if (props.showPersons) {
     //     assignedClasses = 'red';
     // }
